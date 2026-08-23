@@ -1,0 +1,44 @@
+{
+  "info": {
+    "name": "JSONPlaceholder API Tests",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET - Récupérer un post",
+      "request": {
+        "method": "GET",
+        "url": "https://jsonplaceholder.typicode.com/posts/1"
+      }
+    },
+    {
+      "name": "POST - Créer un post",
+      "request": {
+        "method": "POST",
+        "url": "https://jsonplaceholder.typicode.com/posts",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\": \"Mon nouveau post\", \"body\": \"Contenu du post de test\", \"userId\": 1}"
+        }
+      }
+    },
+    {
+      "name": "PUT - Modifier un post",
+      "request": {
+        "method": "PUT",
+        "url": "https://jsonplaceholder.typicode.com/posts/1",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\": \"Titre modifié\", \"body\": \"Contenu modifié\", \"userId\": 1}"
+        }
+      }
+    },
+    {
+      "name": "DELETE - Supprimer un post",
+      "request": {
+        "method": "DELETE",
+        "url": "https://jsonplaceholder.typicode.com/posts/1"
+      }
+    }
+  ]
+}
